@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/Logos/white-heart.png">
+</head>
+
+<body>
+    <header class="heading">
+        <a class="heading__logo" href="#title"></a>
+        <nav class="heading__navigation">
+            <a href="#dedication" class="heading__navigation__link">Dedicatória</a>
+            <a href="#album" class="heading__navigation__link">Álbum</a>
+            <a href="#aboutus" class="heading__navigation__link">Sobre Nós</a>
+        </nav>
+    </header>
+    <main class="presentation">
+        <h1 id="title" class="presentation__title">S2 Laurocas S2</h1>
+        <section id="dedication" class="presentation__dedication">
+            <h2>Para os Zé Ruelas</h2>
+            <p>&emsp;Esse site é um lugarzinho que reúne alguns momentos nossos, bem pouco perto de tudo, para que a gente possa voltar aqui sempre e lembrar como nossa vida era quando ele foi feito. Comecei querendo desenvolver qualquer coisinha pra treinar o que aprendi, e acabou virando algo bem mais especial, onde depositei bastante carinho, atenção e amor. Eu amo muito o que nós somos e construímos. Amo você tudo isso meu amor &#128072; &#128073; e dando voltas&#128257;!</p>
+        </section>
+        <hr>
+        <section id="album" class="presentation__album">
+            <img class="presentation__album__images" src="./Assets/Festa/casamento-nessa.jpg"/>
+            <img class="presentation__album__images" src="./Assets/Socorro/selfie-pedra-2.jpg" />
+            <img class="presentation__album__images" src="./Assets/Festa/casamento-sussu.jpg"/>
+            <img class="presentation__album__images" src="./Assets/Praia/lindos-noite.jpg" />
+            <img class="presentation__album__images" src="./Assets/Festa/carlos-moises.jpg"/>
+            <img class="presentation__album__images" src="./Assets/Festa/casamento-pedrao.jpg"/>
+            <img class="presentation__album__images" src="./Assets/Festa/dirceu-niver.jpg"/>       
+            <img class="presentation__album__images" src="./Assets/Festa/halloween.jpg" />
+            <img class="presentation__album__images" src="./Assets/Festa/fim-de-semana.jpg" />
+            <img class="presentation__album__images" src="./Assets/Festa/niver-lau.jpg" />
+            <img class="presentation__album__images" src="./Assets/Festa/juju-niver.jpg" />
+            <img class="presentation__album__images" src="./Assets/Praia/ze-ruelas-noite.jpg" />       
+            <img class="presentation__album__images" src="./Assets/Festa/taveira-junina.jpg" />
+            <img class="presentation__album__images" src="./Assets/Olimpia/carreta-furacao.jpg" />
+            <img class="presentation__album__images" src="./Assets/Olimpia/coladinhos-olimpia.jpg" />
+            <img class="presentation__album__images" src="./Assets/Preguica/casa-lari.jpg" />
+            <img class="presentation__album__images" src="./Assets/Praia/solzin.jpg" />      
+            <img class="presentation__album__images" src="./Assets/Preguica/nico-laura-paulo.jpg" />
+            <img class="presentation__album__images" src="./Assets/Preguica/pos-casamento-brasilandia.jpg" />
+            <img class="presentation__album__images" src="./Assets/Preguica/serios-e-lindos.jpg" />
+            <img class="presentation__album__images" src="./Assets/Preguica/sushi-makers.jpg" />
+            <img class="presentation__album__images" src="./Assets/Random/casal-openheineken.jpg" />
+            <img class="presentation__album__images" src="./Assets/Random/chachecoll.jpg" />
+            <img class="presentation__album__images" src="./Assets/Random/espelho-carro.jpg" />
+            <img class="presentation__album__images" src="./Assets/Random/falta-brilho.jpg" />
+            <img class="presentation__album__images" src="./Assets/Random/vila-lobos.jpg" />
+            <img class="presentation__album__images" src="./Assets/Socorro/selfie-pedra.jpg" />
+        </section>
+        <hr>
+        <section id="aboutus" class="presentation__aboutus">
+            <h2>Quem são esses esquisitinhos ai em cima?</h2>
+            <p>&emsp;Esses aí são nada mais nada menos que Laurinha e Paulocas, um casal apaixonadamente apaixonado, que surgiu dos confins de uma lata velha cohecida como 7725 (não tão conhecida, porque era bem raro de ver ele la na USP...). Foi nesse reduto de amor, conforto e paz que esse casal começou a conversar e se encantar pelo jeito que o outro via o mundo! Depois de muitas conversas sobre o medo de arremessar o próprio celular involuntariamente pela janela do ônibus, ou sobre o quanto nossas irmãs eram meio que a mesma pessoa, esse casal foi percebendo o quanto eram semelhantes nos pensamentos e vivências, contrariando expectativas (um politreco e uma fflcher ).</p>
+            <p>&emsp;Não passou muito tempo até que o jovem rapaz convidasse a donzela para um bandate, o mais alto nível de um primeiro encontro fino e requintado. A Laurinha não sabia, mas Paulocas já estava igualmente apaixonado por ela e por isso ao fim do encontro ele "roubou" um beijo dela, que lhe retribuiu com um pedacinho generoso de feijão... Tempo vai, tempo vem e no dia 1 de julho o princeso tomou coragem e pediu a princesa em namoro. No presente momento em que este site é feito, os bonitos estão para completar seus primeiros dois aninhos de muito amor, companheirismo, amizade, confiança e apoio. Já viveram muitas coisas e pretendem fazer dessas muitas coisas só uma partezinha de tanto que ainda tem por vir!</p>
+        </section>
+    </main>
+    <footer>
+        <p class="footer__text">Desenvolvido por</p> 
+        <a href="https://github.com/Marcos-Paulo-Pacifico">
+            <strong class="footer__text">Marcos Paulo Pacífico</strong>
+            <img src="./Assets/Logos/github-logo.png"/>
+        </a>
+    </footer>
+
+    <script>
+        {
+            const nav =  document.querySelector(".heading");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", ()=> {
+                if(window.scrollY < lastScrollY){
+                    nav.classList.add("nav--hidden");
+                } else {
+                    nav.classList.remove("nav--hidden");
+                }
+
+                lastScrollY = window.scrollY;
+            })
+        }
+    </script>
+</body>
+</html>

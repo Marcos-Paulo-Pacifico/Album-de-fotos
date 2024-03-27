@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Neucha&display=swap');
+:root {
+    --cor-primaria: #fcf7d1;
+    --cor-secundaria: #444444;
+    --cor-terciaria: #b52c00;
+    --cor-quartenaria: #bc0005;
+
+    --cor-hover: #a9a17a;
+
+    --fonte-primaria: 'Neucha', cursive;
+    --fonte-secundaria: 'Cormorant Garamond', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    height: 7%;
+    width: 100%;
+    padding: 1% 3%;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-terciaria);
+    position: fixed;
+    transition: transform 0.2s;
+}
+
+.nav--hidden{
+    transform: translateY(-100%);
+}
+
+.heading__logo{
+    height: 4rem;
+    background-image: url("../Assets/Logos/heart-logo.png");
+    background-size: cover;
+    min-width: 4rem;
+}
+
+.heading__logo:hover{
+    background-image: url("../Assets/Logos/white-heart.png");
+}
+
+.heading__navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.heading__navigation__link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.heading__navigation__link:hover{
+    color: var(--cor-hover);
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 6%;
+}
+
+.presentation__title{
+    font-family: var(--fonte-primaria);
+    font-size: 4.5rem;
+    color: var(--cor-secundaria);
+}
+
+.presentation__dedication{
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    color: var(--cor-secundaria);
+}
+
+.presentation__dedication p {
+    font-size: 1.2rem;
+    margin-top: 16px;
+}
+
+.presentation__album{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation__album__images{
+    width: 17.4rem;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.presentation__album__images:hover{
+    transform: scale(1.1);
+}
+
+.presentation__aboutus{
+    font-family: var(--fonte-primaria);
+    text-align: left;
+}
+
+.presentation__aboutus p {
+    margin-top: 16px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color: var(--cor-quartenaria);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+}
+
+.footer__text{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+
+}
+
+footer a{
+    height: 50%;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+footer img{
+    height: 100%;
+}
+
+@media (max-width: 480px){
+    .heading{
+        height: 10%;
+        gap: 10px;
+    }
+    
+    .heading__navigation{
+        gap: 20px;
+    }
+
+    .heading__navigation__link{
+        font-size: 1rem;
+    }
+
+    .presentation__title{
+        font-size: 3rem;
+    }
+
+    .footer__text{
+        font-size: 1rem;
+    }
+}
